@@ -1,0 +1,28 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    color: $second-color;
+    font-size: 14px;
+    outline: none !important;
+}
+a {
+    transition: 0.2s ease;
+    &:hover {
+        text-decoration: none;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+button,
+input,
+textarea,
+.form-control {
+    &:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}
+input[type="radio"],
+input[type="checkbox"] {
+    accent-color: $theme-green;
+}

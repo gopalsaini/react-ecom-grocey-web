@@ -1,0 +1,83 @@
+.piclist {
+    margin-top: 15px;
+    height: auto;
+    padding: 0;
+    text-align: center;
+}
+
+.piclist li {
+    display: inline-block;
+    width: 77px;
+}
+
+.piclist li img {
+    width: 76px;
+    height: auto;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+.piclist li img:hover {
+    border-color: #768d17;
+}
+
+.picZoomer {
+    position: relative;
+}
+
+.picZoomer-pic-wp {
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.picZoomer-pic-wp:hover .picZoomer-cursor {
+    display: block;
+}
+
+.picZoomer-zoom-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: contain;
+}
+
+.picZoomer-pic {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.picZoomer-zoom-wp {
+    display: none;
+    position: absolute;
+    z-index: 1001;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    height: 125% !important;
+    width: 130% !important;
+    background: #fff;
+    box-shadow: 0px 1px 6px 0px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+}
+
+.picZoomer-cursor {
+    display: none;
+    cursor: crosshair;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 0%;
+    border: 1px solid #eee;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.picZoomCursor-ico {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}

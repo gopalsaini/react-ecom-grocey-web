@@ -1,0 +1,57 @@
+$first-color: #dba8a4;
+$second-color: #505050;
+$light-color: #d0d0d0;
+$light-theme: #ffd9d9;
+$theme-green: #768d17;
+$white: #fff;
+$main-padd: 60px 0;
+$weekly-deal-padding: 70px 0;
+$mt-106: 106px;
+// mobile variable
+$mobile-main-padd: 40px 0;
+@mixin header-space {
+    margin-top: $mt-106;
+}
+
+@mixin main-padding {
+    padding: $main-padd;
+}
+@mixin section-heading {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: $second-color;
+}
+
+@mixin buy-now-btn {
+    background: $first-color;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    &:hover {
+        background: $theme-green;
+        color: $white;
+    }
+}
+
+@mixin prod-title {
+    font-size: 20px;
+    color: $second-color;
+    font-weight: 600;
+    margin-top: 8px;
+}
+@mixin prod-price {
+    font-size: 18px;
+    font-weight: 600;
+    color: $first-color;
+    del {
+        color: $light-color;
+        margin-right: 5px;
+    }
+}

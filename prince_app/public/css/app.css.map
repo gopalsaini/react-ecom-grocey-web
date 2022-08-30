@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,OAAO,CAAC,qDAAI",
+    "sources": [
+        "../../vendor/laravel/ui/src/Presets/bootstrap-stubs/app.scss",
+        "../../vendor/laravel/ui/src/Presets/bootstrap-stubs/_variables.scss"
+    ],
+    "names": [],
+    "file": "app.css"
+}
